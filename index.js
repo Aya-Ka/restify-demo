@@ -5,12 +5,9 @@ const config = require('./config');
 const restify = require('restify');
 const restifyPlugsins = require('restify-plugins');
 
-
 /**
  * Initialize Server
  */
-
-
 const server = restify.createServer({
     name: config.name,
     version: config.version,
@@ -22,6 +19,7 @@ const server = restify.createServer({
 server.use(restifyPlugsins.jsonBodyParser({mapParams: true}));
 server.use(restifyPlugsins.acceptParser(server.acceptable));
 server.use(restifyPlugsins.queryParser({ mapParams: true}));
+require('./utils/swagger')(server);
 
 /**
  * Start server
