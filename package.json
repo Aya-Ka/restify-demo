@@ -11,6 +11,7 @@
   "dependencies": {
     "restify": "^8.3.2",
     "restify-errors": "^8.0.0",
-    "restify-plugins": "^1.6.0"
+    "restify-plugins": "^1.6.0",
+    "restify-swagger-jsdoc": "^3.0.0"
   }
 }
