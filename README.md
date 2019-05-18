@@ -1,5 +1,5 @@
-# gps-tracker-server
-The API server of GPS tracker
+# restify-demo
+A demo for REST API by restify
 
 ### Prerequisites
 node.js (https://nodejs.org/en/)
